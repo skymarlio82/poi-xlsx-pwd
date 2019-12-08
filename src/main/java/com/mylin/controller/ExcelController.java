@@ -1,12 +1,12 @@
-package com.xiaopotian.Controller;
+package com.mylin.controller;
 
+import com.mylin.model.ExcelData;
+import com.mylin.util.ExcelUtil;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,8 +29,8 @@ public class ExcelController {
         row.add("33333333333");
         rows.add(row);
         data.setRows(rows);
-        ExportExcelUtils.exportExcel(data);
-        ExportExcelUtils.encryptExcel("password");
-        ExportExcelUtils.exportExcel(response, "hello.xlsx");
+        ExcelUtil.exportExcel(data);
+        ExcelUtil.encryptExcel("password");
+        ExcelUtil.exportExcel(response, "hello.xlsx");
     }
 }

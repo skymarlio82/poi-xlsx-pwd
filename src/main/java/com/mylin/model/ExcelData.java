@@ -1,4 +1,4 @@
-package com.xiaopotian.Controller;
+package com.mylin.model;
 
 import java.io.Serializable;
 import java.util.List;

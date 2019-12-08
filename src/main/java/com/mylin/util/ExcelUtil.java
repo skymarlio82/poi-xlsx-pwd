@@ -1,5 +1,6 @@
-package com.xiaopotian.Controller;
+package com.mylin.util;
 
+import com.mylin.model.ExcelData;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.openxml4j.opc.PackageAccess;
 import org.apache.poi.poifs.crypt.EncryptionInfo;
@@ -18,7 +19,6 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.extensions.XSSFCellBorder.BorderSide;
 
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.io.File;
@@ -28,7 +28,7 @@ import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.util.List;
 
-public class ExportExcelUtils {
+public class ExcelUtil {
 
     public final static String TEMP_FILE_REPOS_PATH = "C:/Users/jitao/Downloads/";
     public final static String TEMP_FILE_NAME = "test";

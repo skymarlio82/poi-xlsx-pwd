@@ -1,4 +1,4 @@
-package com.xiaopotian;
+package com.mylin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -10,9 +10,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @ComponentScan
 @EnableAutoConfiguration
 @EnableScheduling
-public class ExcelDemoApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(ExcelDemoApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
